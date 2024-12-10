@@ -1,0 +1,136 @@
+{
+        "intents": [
+            {
+                "tag": "greeting",
+                "patterns": [
+                    "Hello",
+                    "How are you?",
+                    "Is anyone there?",
+                    "Hi",
+                    "Hello there",
+                    "Good day"
+                ],
+                "responses": [
+                    "Hello, thanks for asking. I am your virtual assistant. How can I help you today?",
+                    "Good to see you again! I’m ready to help you find books or related information.",
+                    "Hi there, how can I assist you? Are you looking for any specific book today?"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "goodbye",
+                "patterns": [
+                    "Goodbye",
+                    "See you later",
+                    "Farewell",
+                    "Nice chatting, goodbye",
+                    "Till next time"
+                ],
+                "responses": [
+                    "Goodbye! Have a great day and I hope you find the book you want.",
+                    "Have a wonderful day! Come back if you need any more help.",
+                    "Goodbye! I hope you find the perfect book soon."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "thanks",
+                "patterns": [
+                    "Thank you",
+                    "Thanks a lot",
+                    "That's helpful",
+                    "Awesome, thanks",
+                    "Thanks for your help"
+                ],
+                "responses": [
+                    "Happy to help! If you need more information, feel free to ask.",
+                    "Anytime! Thank you for trusting and using our service.",
+                    "It’s my pleasure. Enjoy your shopping and find the books you love!"
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "options",
+                "patterns": [
+                    "What can you do for me?",
+                    "What kind of help can you provide?",
+                    "How can you assist me?",
+                    "What services do you offer?",
+                    "What support do you provide?"
+                ],
+                "responses": [
+                    "I can help you find books by title, genre, or author. I can also check order status and provide promotional information.",
+                    "I can assist you with book searches, order status checks, promotions, and store locations.",
+                    "I can guide you to find books, check order status, provide information about ongoing discounts, and locate nearby stores."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "book_search",
+                "patterns": [
+                    "Find a book",
+                    "Search for a book",
+                    "Show me books",
+                    "I want to buy a book",
+                    "Do you have any new books?",
+                    "List popular books",
+                    "I need a book on programming",
+                    "Do you have classic literature?"
+                ],
+                "responses": [
+                    "Please tell me the title or genre of the book you are looking for. For example: 'Find a book on history' or 'Books by J.K. Rowling'.",
+                    "To search for a book quickly, please tell me the title, genre, or author you're interested in.",
+                    "I can search for books for you. Please provide the title, genre, or author you'd like to find."
+                ],
+                "context": ["search_book_by_title_or_genre"]
+            },
+            {
+                "tag": "order_status",
+                "patterns": [
+                    "Check order status",
+                    "I want to know the order status",
+                    "Where is my order?",
+                    "What is the status of my order?",
+                    "When will my order be delivered?"
+                ],
+                "responses": [
+                    "Please provide your order code so I can check the status for you.",
+                    "To check your order status, please enter the order code here.",
+                    "Providing your order code will help me quickly find the status of your order."
+                ],
+                "context": ["check_order_status_by_code"]
+            },
+            {
+                "tag": "promotion_info",
+                "patterns": [
+                    "Promotions information",
+                    "Are there any discounts?",
+                    "What are the current promotions?",
+                    "Are there any discounts on books?",
+                    "Do you have any book sales?"
+                ],
+                "responses": [
+                    "We have several promotions currently running. You can check our website, or I can provide more detailed information.",
+                    "We have some special promotions. Let me know the type of book you’re interested in so I can provide relevant details.",
+                    "Current promotions are being updated. Let me find detailed information for you."
+                ],
+                "context": [""]
+            },
+            {
+                "tag": "store_locator",
+                "patterns": [
+                    "Find a store near me",
+                    "Store location",
+                    "Locate a store",
+                    "Find nearby bookstores",
+                    "Where is the nearest store?"
+                ],
+                "responses": [
+                    "Please provide the name or area where you are located so I can find a store near you.",
+                    "Let me know your current location, and I can find the nearest stores for you.",
+                    "Please tell me your address or area so I can find nearby stores for you."
+                ],
+                "context": ["search_store_by_location"]
+            }
+        ]
+    }
